@@ -1,0 +1,29 @@
+:root {
+  --austra-green: #4b5a34;
+  --austra-ocre: #c28b1a;
+  --austra-smoke: #6f6f6f;
+  --austra-black: #000000;
+  --austra-white: #ffffff;
+  --austra-bg: #f5f2ea;
+  --austra-radius-lg: 1rem;
+  --austra-radius-md: 0.75rem;
+  --austra-shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+$austra-green: #4b5a34;
+$austra-ocre: #c28b1a;
+$austra-smoke: #6f6f6f;
+$austra-black: #000000;
+$austra-white: #ffffff;
+$austra-bg: #f5f2ea;
+$austra-radius-lg: 1rem;
+$austra-radius-md: 0.75rem;
+$austra-shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+$austra-colors: (
+  "green": $austra-green,
+  "ocre": $austra-ocre,
+  "smoke": $austra-smoke,
+  "black": $austra-black,
+  "white": $austra-white
+);
