@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSTRA - Colección</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo-austra.png" alt="Logo AUSTRA" height="40" class="me-2">
+                <strong>AUSTRA</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAustra">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarAustra">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Remeras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Anoraks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Buzos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Rompevientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main>
+
+<section class="py-5 hero-productos text-center text-md-start">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-6">
+                <h1 class="display-5 fw-bold">Colección AUSTRA</h1>
+                <p class="lead mt-3">Prendas esenciales creadas para soportar el viento patagónico. Técnicas, duraderas y listas para cualquier terreno.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/banner.png" class="img-fluid rounded" alt="Ilustración Patagonia AUSTRA">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <aside class="col-12 col-md-3">
+                <h2 class="h5 mb-3">Filtrar por</h2>
+
+                <div class="accordion" id="filtrosAustra">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingCategoria">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategoria">
+                                Categoría
+                            </button>
+                        </h2>
+                        <div id="collapseCategoria" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled mb-0 text-uppercase">
+                                    <li><a href="#" class="text-decoration-none">Remeras</a></li>
+                                    <li><a href="#" class="text-decoration-none">Anoraks</a></li>
+                                    <li><a href="#" class="text-decoration-none">Buzos</a></li>
+                                    <li><a href="#" class="text-decoration-none">Rompevientos</a></li>
+                                    <li><a href="accesorios.html" class="text-decoration-none">Accesorios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTalle">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTalle">
+                                Talle
+                            </button>
+                        </h2>
+                        <div id="collapseTalle" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-light text-dark border">S</span>
+                                    <span class="badge bg-light text-dark border">M</span>
+                                    <span class="badge bg-light text-dark border">L</span>
+                                    <span class="badge bg-light text-dark border">XL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingColor">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor">
+                                Color
+                            </button>
+                        </h2>
+                        <div id="collapseColor" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-circle bg-black p-3"></span>
+                                    <span class="badge rounded-circle p-3" style="background-color:#4b5a34;"></span>
+                                    <span class="badge rounded-circle p-3" style="background-color:#c28b1a;"></span>
+                                    <span class="badge rounded-circle bg-secondary p-3"></span>
+                                    <span class="badge rounded-circle bg-light p-3"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+            <section class="col-12 col-md-9">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="h4 mb-0">Productos AUSTRA</h2>
+                    <p class="mb-0 small text-muted">Mostrando colección completa</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/rompeviento.png" class="card-img-top" alt="Rompeviento verde AUSTRA">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">ROMPEVIENTO VERDE</h3>
+                                <p class="mb-1 fw-semibold">$89.500</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/anoraknegro.png" class="card-img-top" alt="Anorak negro AUSTRA">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">ANORAK NEGRO</h3>
+                                <p class="mb-1 fw-semibold">$99.900</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/remera sap green.png" class="card-img-top" alt="Remera Sap Green">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">REMERA SAP GREEN</h3>
+                                <p class="mb-1 fw-semibold">$32.500</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/perchero.png" class="card-img-top" alt="Línea Essentials AUSTRA">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">LÍNEA ESSENTIALS</h3>
+                                <p class="mb-1 fw-semibold">Desde $29.900</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/etiq1.png" class="card-img-top" alt="Cinto Scout AUSTRA">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">CINTO SCOUT</h3>
+                                <p class="mb-1 fw-semibold">$1.200</p>
+                                <p class="mb-0 small text-muted">Cinturón quick release.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/etiq2.png" class="card-img-top" alt="Cinto Trooper AUSTRA">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">CINTO TROOPER</h3>
+                                <p class="mb-1 fw-semibold">$1.200</p>
+                                <p class="mb-0 small text-muted">Cinturón con sistema molle.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/logo2.png" class="card-img-top" alt="Pack de íconos AUSTRA">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">PACK DE ÍCONOS</h3>
+                                <p class="mb-1 fw-semibold">Incluido</p>
+                                <p class="mb-0 small text-muted">Aplicación en prendas.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="img/logoig.png" class="card-img-top" alt="Instagram AUSTRA">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">SEGUINOS</h3>
+                                <p class="mb-1 fw-semibold">@austra.oficial</p>
+                                <p class="mb-0 small text-muted">Novedades y lanzamientos.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="py-4 bg-dark text-white text-center">
+    <p class="mb-0 text-uppercase">&copy; 2025 AUSTRA - Patagonia Argentina</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

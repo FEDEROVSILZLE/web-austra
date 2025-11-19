@@ -1,0 +1,343 @@
+/* ============================
+   VARIABLES DE MARCA AUSTRA
+============================ */
+
+:root {
+  --austra-green: #4b5a34;      /* verde vejiga aproximado */
+  --austra-ocre: #c28b1a;       /* amarillo ocre oscuro */
+  --austra-smoke: #6f6f6f;      /* gris humo */
+  --austra-black: #000000;
+  --austra-white: #ffffff;
+  --austra-bg: #f5f2ea;         /* fondo cálido tipo etiqueta kraft clara */
+  --austra-radius-lg: 1rem;
+  --austra-radius-md: 0.75rem;
+  --austra-shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================
+   RESETEO BÁSICO / GLOBAL
+============================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  background-color: var(--austra-bg);
+  color: #111111;
+  line-height: 1.5;
+  overflow-x: hidden; /* evita scroll horizontal raro */
+}
+
+/* enlaces */
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--austra-green);
+}
+
+/* contenedores generales (para que nada toque bordes) */
+main > section:first-of-type {
+  margin-top: 1rem;
+}
+
+/* ============================
+   NAVBAR / HEADER
+============================ */
+
+.navbar {
+  background-color: var(--austra-black) !important;
+}
+
+.navbar-brand img {
+  filter: brightness(1.05);
+}
+
+.navbar-brand strong {
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--austra-ocre) !important;
+}
+
+/* ============================
+   BOTONES PERSONALIZADOS
+============================ */
+
+.btn-austra {
+  background-color: var(--austra-black);
+  color: var(--austra-white);
+  border-radius: 999px;
+  padding-inline: 1.8rem;
+  padding-block: 0.55rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-austra:hover {
+  background-color: var(--austra-green);
+  color: var(--austra-white);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Podemos reutilizar esta clase en HTML donde diga class="btn btn-dark" si querés luego. */
+
+/* ============================
+   HOME: HERO Y GRID CATEGORÍAS
+============================ */
+
+.hero-home {
+  padding-block: 4rem;
+}
+
+.hero-home h1 {
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-home p.lead {
+  max-width: 40rem;
+  margin-inline: auto;
+  color: var(--austra-smoke);
+}
+
+/* Cards de categorías (index) */
+
+.card {
+  border: none;
+  border-radius: var(--austra-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--austra-shadow-soft);
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-title {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+}
+
+/* ============================
+   PÁGINA DE PRODUCTOS
+============================ */
+
+/* Hero de productos: fondo verde patagónico suave */
+
+.hero-productos {
+  background: linear-gradient(
+      120deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/banner.png") center/cover no-repeat;
+  color: var(--austra-white);
+  position: relative;
+}
+
+.hero-productos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.3),
+    transparent
+  );
+}
+
+.hero-productos .container,
+.hero-productos .row {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-productos h1 {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-productos p.lead {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Cards de producto */
+
+.product-card {
+  border-radius: var(--austra-radius-md);
+  box-shadow: var(--austra-shadow-soft);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  background-color: #ffffff;
+}
+
+.product-card img {
+  height: 230px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+}
+
+.product-card .card-body {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.product-card .card-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.product-card p.fw-semibold {
+  color: var(--austra-green);
+}
+
+/* ============================
+   SIDEBAR / FILTROS
+============================ */
+
+aside h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--austra-smoke);
+}
+
+/* Acordeón Bootstrap tuneado */
+
+.accordion-item {
+  border-radius: var(--austra-radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  margin-bottom: 0.7rem;
+}
+
+.accordion-button {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: #f9f7f1;
+  color: #333333;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--austra-black);
+  background-color: #f0ece1;
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #ffffff;
+}
+
+/* Badges de talles */
+
+.accordion-body .badge {
+  font-size: 0.75rem;
+  border-radius: 999px;
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ============================
+   UTILITARIAS / DETALLES
+============================ */
+
+.badge.rounded-circle {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Imagen cuadrada para íconos tipo Instagram */
+.icon-square {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: var(--austra-white);
+  box-shadow: var(--austra-shadow-soft);
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 767.98px) {
+  .hero-productos {
+    text-align: center;
+  }
+
+  .hero-productos::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.4),
+      transparent
+    );
+  }
+
+  .hero-productos .row > div {
+    text-align: center;
+  }
+
+  .hero-productos img {
+    margin-top: 1rem;
+    max-width: 80%;
+  }
+
+  .navbar-brand strong {
+    letter-spacing: 0.12em;
+  }
+}

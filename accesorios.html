@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSTRA - Accesorios</title>
+
+    <!-- el butstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+        <!-- el jeder y el class -->
+
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo-austra.png" alt="Logo AUSTRA" height="40" class="me-2">
+                    <strong>AUSTRA</strong>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAustra">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarAustra">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Remeras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Anoraks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Buzos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Rompevientos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="py-5 hero-productos text-center">
+            <div class="container">
+                <h1 class="display-5 fw-bold">Accesorios & Branding</h1>
+                <p class="lead mt-3">
+                    Accesorios para complementar tu aventura.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <aside class="col-12 col-md-3">
+                        <h2 class="h5 mb-3">Filtrar por</h2>
+
+                        <div class="accordion" id="filtrosAccesorios">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTipo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTipo" aria-expanded="true"
+                                            aria-controls="collapseTipo">
+                                        Tipo de accesorio
+                                    </button>
+                                </h2>
+                                <div id="collapseTipo" class="accordion-collapse collapse show"
+                                     aria-labelledby="headingTipo" data-bs-parent="#filtrosAccesorios">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#" class="text-decoration-none">CAPS</a></li>
+                                            <li><a href="#" class="text-decoration-none">CINTURONES</a></li>
+                                            <li><a href="#" class="text-decoration-none">PRINTS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMaterial">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseMaterial" aria-expanded="false"
+                                            aria-controls="collapseMaterial">
+                                        Material
+                                    </button>
+                                </h2>
+                                <div id="collapseMaterial" class="accordion-collapse collapse"
+                                     aria-labelledby="headingMaterial" data-bs-parent="#filtrosAccesorios">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>CORDURA</li>
+                                            <li>CUERO</li>
+                                            <li>RIPSTOp</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+
+                    <section class="col-12 col-md-9">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h2 class="h4 mb-0">Accesorios AUSTRA</h2>
+                            <p class="mb-0 small text-muted">Detalles que completan la experiencia.</p>
+                        </div>
+
+                        <div class="row g-4">
+                            <article class="col-12 col-sm-6 col-lg-4">
+                                <div class="card h-100 product-card">
+                                    <img src="img/etiq1.png"
+                                         class="card-img-top"
+                                         alt="CINTO2">
+                                    <div class="card-body">
+                                        <h3 class="h6 card-title">CINTO SCOUT</h3>
+                                        <p class="mb-1 fw-semibold">$1.200</p>
+                                        <p class="mb-0 small text-muted">Cinturon quick release.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-12 col-sm-6 col-lg-4">
+                                <div class="card h-100 product-card">
+                                    <img src="img/etiq2.png"
+                                         class="card-img-top"
+                                         alt="CINTO3">
+                                    <div class="card-body">
+                                        <h3 class="h6 card-title">CINTO TROOPER</h3>
+                                        <p class="mb-1 fw-semibold">$1.200</p>
+                                        <p class="mb-0 small text-muted">Cinturon con sistema molle.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-12 col-sm-6 col-lg-4">
+                                <div class="card h-100 product-card">
+                                    <img src="img/logo2.png"
+                                         class="card-img-top"
+                                         alt="Set de íconos AUSTRA: montaña, viento y ñandú">
+                                    <div class="card-body">
+                                        <h3 class="h6 card-title">Pack de Íconos</h3>
+                                        <p class="mb-1 fw-semibold">Incluido</p>
+                                        <p class="mb-0 small text-muted">Aplicación en serigrafía y estampas.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-12 col-sm-6 col-lg-4">
+                                <div class="card h-100 product-card">
+                                    <img src="img/etiq1.png"
+                                         class="card-img-top"
+                                         alt="gorra1">
+                                    <div class="card-body">
+                                        <h3 class="h6 card-title">CAP IRWIN</h3>
+                                        <p class="mb-1 fw-semibold">$75.000</p>
+                                        <p class="mb-0 small text-muted">Cap con velcro para parche y bolsillo ocultos</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-12 col-sm-6 col-lg-4">
+                                <div class="card h-100 product-card">
+                                    <img src="img/logoig.png"
+                                         class="card-img-top"
+                                         alt="iconoIG">
+                                    <div class="card-body">
+                                        <h3 class="h6 card-title">SEGUINOS</h3>
+                                        <p class="mb-1 fw-semibold">@austra.oficial</p>
+                                        <p class="mb-0 small text-muted">Conoce AUSTRA y el corazon de la estepa patagonica en nuestras redes.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- paisaje -->
+                            <article class="col-12 col-sm-6 col-lg-4">
+                                <div class="card h-100 product-card">
+                                    <img src="img/banner.png"
+                                         class="card-img-top"
+                                         alt="CHENQUE">
+                                    <div class="card-body">
+                                        <h3 class="h6 card-title">PRINTS</h3>
+                                        <p class="mb-1 fw-semibold">Print edición limitada</p>
+                                        <p class="mb-0 small text-muted">El magestuoso Chenque.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =======================
+         FOOTER
+    ======================== -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p class="mb-1">&copy; 2025 AUSTRA - Todos los derechos reservados</p>
+        <p class="mb-0 small">
+            Diseñado en Comodoro Rivadavia, Patagonia Argentina.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
