@@ -1,0 +1,40 @@
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: #{$bp-sm}) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: #{$bp-md}) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: #{$bp-lg}) { @content; }
+  }
+}
+
+@mixin card-surface($radius: $austra-radius-lg, $shadow: $austra-shadow-soft) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  background-color: $austra-white;
+}
+
+@mixin austra-button {
+  background-color: $austra-black;
+  color: $austra-white;
+  border-radius: 999px;
+  padding-inline: 1.8rem;
+  padding-block: 0.55rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: $austra-green;
+    color: $austra-white;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  }
+}
