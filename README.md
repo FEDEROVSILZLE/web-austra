@@ -30,10 +30,10 @@ Extructura del proyecto
 
 ```text
 web-austra/
-├─ index.html          # Home con categorías
-├─ productos.html      # Listado de productos AUSTRA
-├─ accesorios.html     # Accesorios y branding
+├─ index.html           Home con categorías
+├─ productos.html       Listado de productos AUSTRA
+├─ accesorios.html      Accesorios y branding
 ├─ css/
-│   └─ styles.css      # Estilos personalizados de la marca
+│   └─ styles.css       Estilos personalizados de la marca
 └─ img/
-    └─ ...             # Imágenes de productos, logos y fondos
+    └─ ...              Imágenes de productos, logos y fondos
